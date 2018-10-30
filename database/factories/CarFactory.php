@@ -2,12 +2,11 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(\App\car::class, function (Faker $faker) {
+$factory->define(App\Car::class, function (Faker $faker) {
     return [
-        'make' => $faker->randomElement([$array = array('ford', 'honda', 'toyota')]),
-        'model' => $faker->randomElement([$array = array('Sedan', 'Xuv', 'coupe')]),
-        'year' => $faker->randomElement([$array = array('2012', '2010', '2011','2014')]),
-        //'model'=> $faker->randomElement([$array = array('figo', 'city', 'corolla')]),
-        //'year' => $faker->randomElement([$array = array('2012', '2010','2011')]),
+        'make' => $faker->randomElement(['ford', 'honda', 'toyota']),
+        'model' => $faker->randomElement(['Sedan', 'Xuv', 'coupe']),
+        'year' => $faker->randomElement(['2012', '2010', '2011','2014']),
+
     ];
 });
