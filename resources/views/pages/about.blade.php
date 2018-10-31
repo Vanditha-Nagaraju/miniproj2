@@ -1,10 +1,8 @@
-@extends('layouts.default')
+@extends('layouts.app')
 
 @section('content')
     <br>
-    <br>
-    <br>
-
+    
 
 
     <h1>This is my About page </h1>
